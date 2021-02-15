@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>before and after pseudo selector</title>
+  <style>
+    body {
+      background-color: gray;
+      color: black;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    header::before {
+
+      background: url('https://source.unsplash.com/random') no-repeat center;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0%;
+      opacity: 0.3;
+    }
+
+    .navigation {
+      display: flex;
+      font-size: 20px;
+    }
+
+    li {
+      padding: 20px 23px;
+      list-style: none;
+    }
+
+    section {
+      height: 344px;
+      margin: 3px 23px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    p {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="navigation">
+        <li class="item">Home</li>
+        <li class="item">About</li>
+        <li class="item">service</li>
+        <li class="item">Contact us</li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h3>welcomne to coding word</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, iure laborum! Dolor cupiditate assumenda sequi
+      impedit repellendus magni quia voluptates harum non veritatis. Sint voluptas saepe rerum blanditiis dolore modi.
+    </p>
+  </section>
+
+</body>
+
+</html>

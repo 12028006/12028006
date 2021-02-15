@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> more on selector</title>
+  <style>
+    h1{
+      background-color: red;
+      font-size: 20px;
+      color: white;
+      text-align: center;
+    }
+    /* > this sign used for direct child  */
+    /* div > p{
+      color: yellow;
+      background-color: slateblue;
+      font-weight: bold;
+      text-align: center;
+    }
+    div  p{
+      color: yellow;
+      background-color: rgb(16, 9, 65);
+      font-weight: bold;
+      text-align: center;
+    } */
+    div + p{
+      color: white;
+      background-color: rgb(150, 58, 58);
+    }
+  </style>
+</head>
+<p>
+  <h1>this is more on selector </h1>
+  <div class="container">
+    <div class="row">
+      <p>this is paragraph</p>
+      <ul>
+        <li><p>this is inside list</p></li>
+      </ul>
+    </div>
+    <p>this is another paragraph</p>
+  </div>
+  <p>this is outermost paragraph</p>
+</body>
+</html>

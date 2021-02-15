@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>box shadow and text shadow</title>
+  <style>
+    .container {
+      display: flex;
+    }
+
+    .card {
+      padding: 23px 12px;
+      /* border: 2px solid black; */
+      margin: 23px 12px;
+      background-color: gray;
+      /* box-shadow: -8px -8px 10px  rgb(193, 60, 60); */
+      /* box-shadow: -8px -8px 10px 34px(spredshadow) rgb(193, 60, 60); */
+      /* box-shadow: 8px(down) 8px(right) 10px(blur)  black; */
+      box-shadow: inset 3px 15px 30px rgb(210, 99, 35); 
+    }
+    .card h2{
+      text-shadow: 2px 2px 2px white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card" id="car-1">
+      <h2> this is c++</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim modi facere itaque nulla officia eveniet optio vel, impedit fuga. Libero tempore earum numquam, eaque voluptatum quasi fugit possimus fugiat unde!
+    </p>
+    </div>
+    <div class="card" id="car-2">
+      <h2>this is HTML course</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim modi facere itaque nulla officia eveniet optio vel, impedit fuga. Libero tempore earum numquam, eaque voluptatum quasi fugit possimus fugiat unde!
+      </p>
+    </div>
+    <div class="card" id="car-3">
+      <h2> card3</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim modi facere itaque nulla officia eveniet optio vel, impedit fuga. Libero tempore earum numquam, eaque voluptatum quasi fugit possimus fugiat unde!
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

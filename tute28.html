@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex box tutorial</title>
+  <style>
+    .container{
+      height: 744px;
+      width: 100%;
+      border: 2px solid black;
+      /* initialize the container as a flex box  */
+      display: flex;
+      /* properties for flex container  */
+
+      /* default value is row sc */
+      flex-direction: row; 
+      /* flex-direction: column;
+      flex-direction: row-reverse;
+      flex-direction: column-reverse;
+             */
+       flex-wrap: wrap;
+       /* flex-wrap: wrap-reverse; */
+       /* flex-flow: row-reverse wrap; */
+       justify-content: center;
+       /* justify-content: space-between; */
+       /* justify-content: space-evenly; */
+       /* align-items: center;
+       align-items: flex-end;
+       align-items: flex-start;
+       align-items: stretch; */
+    }
+    .item{
+      width: 200px;
+      height: 200px;
+      background-color: tomato;
+      border: 2px solid green;
+      margin: 10px;
+      padding: 3px;
+
+    }
+    #item-1{
+      /* higher the order item show in the last  */
+      /* order: 2; */
+      /* flex-grow: 2; */
+      /* flex-shrink: 3; */
+    }
+    #item-2{
+/* flex-grow: 3; */
+align-self: flex-end;
+align-self: center;
+/* align-self: flex-start; */
+
+    }
+    #item-3{
+      /* order: 40; */
+      /* flex-shrink: 2; */
+      /* flex-basis: 320px; */
+      /* width change if its row and height change if its a colums  */
+    }
+
+  </style>
+</head>
+<body>
+  <h1>this is Flexbox tutorial</h1>
+  <div class="container">
+  <div class="item" id="item-1">first Box</div>
+  <div class="item" id="item-2">second Box</div>
+  <div class="item" id="item-3">third Box</div>
+  <div class="item" id="item-4">fourth  Box</div>
+  <div class="item" id="item-5">five Box</div>
+  <div class="item" id="item-6">six Box</div>
+  </div>
+</body>
+</html>
+<!-- what is flexbox ? -->
+<!-- flexbox is a one dimenional layout method for laying out items in row or coloums -->
+<!-- flexbox=flexible+box  -->
+<!-- css flexbox is a better way to algn items into a container  -->
